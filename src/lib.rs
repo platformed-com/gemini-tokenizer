@@ -96,6 +96,7 @@ const SUPPORTED_MODELS: &[&str] = &[
     "gemini-2.0-flash-001",
     "gemini-2.0-flash-lite-001",
     "gemini-3-pro-preview",
+    "gemini-3-flash-preview",
 ];
 
 /// Errors that can occur when creating or using the tokenizer.
