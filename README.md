@@ -1,5 +1,12 @@
 # gemini-tokenizer
 
+## Platformed Note
+
+This is a fork from Crates.io - to get the source tarball you need to do the following:
+```
+curl https://crates.io/api/v1/crates/gemini-tokenizer/0.2.0/download
+```
+
 Community-maintained Gemini tokenizer for Rust, ported from the official
 [Google Python GenAI SDK](https://github.com/googleapis/python-genai) (v1.6.20).
 
