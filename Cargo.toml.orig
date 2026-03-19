@@ -1,0 +1,27 @@
+[package]
+name = "gemini-tokenizer"
+version = "0.2.0"
+edition = "2021"
+rust-version = "1.70"
+license = "Apache-2.0"
+description = "Authoritative Gemini tokenizer for Rust, ported from the official Google Python GenAI SDK"
+readme = "README.md"
+keywords = ["gemini", "tokenizer", "sentencepiece", "google", "llm"]
+categories = ["text-processing", "encoding"]
+include = [
+    "src/**/*.rs",
+    "resources/*.model",
+    "Cargo.toml",
+    "LICENSE",
+    "NOTICE",
+    "README.md",
+]
+
+[dependencies]
+sentencepiece = "0.11"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+
+[dev-dependencies]
+serde_json = "1"

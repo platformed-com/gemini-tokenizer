@@ -1,0 +1,48 @@
+gemini-tokenizer
+Copyright 2026 gemini-tokenizer contributors
+
+This product contains code and data derived from the following projects:
+
+================================================================================
+
+Google Python GenAI SDK (python-genai)
+https://github.com/googleapis/python-genai
+Version used as reference: v1.6.20
+
+Copyright 2025 Google LLC
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+The following components were ported to Rust from the Python SDK:
+
+  - Text accumulation logic (_TextsAccumulator class)
+    Source: google/genai/local_tokenizer.py
+
+  - Model-to-tokenizer name mapping
+    Source: google/genai/_local_tokenizer_loader.py
+
+  - Token-to-bytes conversion logic (_token_str_to_bytes, _parse_hex_byte)
+    Source: google/genai/local_tokenizer.py
+
+================================================================================
+
+Google Gemma PyTorch
+https://github.com/google/gemma_pytorch
+
+Copyright 2024 Google LLC
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+
+The following file is embedded in this crate:
+
+  - resources/gemma3_cleaned_262144_v2.spiece.model
+    Source: tokenizer/gemma3_cleaned_262144_v2.spiece.model
+    Commit: 014acb7ac4563a5f77c76d7ff98f31b568c16508
+    SHA-256: 1299c11d7cf632ef3b4e11937501358ada021bbdf7c47638d13c0ee982f2e79c
+
+================================================================================
